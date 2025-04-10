@@ -694,25 +694,17 @@ input[type="range"] {
     min-width: 150px;
 }
 
-/* 添加导航按钮样式 */
-.header-buttons {
+/* 在线人数样式 */
+.online-count {
+    display: inline-block;
+    background: rgba(0, 122, 255, 0.1);
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
     margin-top: 1rem;
 }
 
-.nav-btn {
-    display: inline-block;
-    padding: 0.8rem 1.5rem;
-    background: var(--primary-color);
-    color: white;
-    text-decoration: none;
-    border-radius: 25px;
-    transition: all 0.3s ease;
-    border: none;
-    cursor: pointer;
-    font-size: 0.9rem;
-}
-
-.nav-btn:hover {
-    background: var(--primary-dark);
-    transform: translateY(-1px);
+.online-count span {
+    font-weight: 600;
 } 

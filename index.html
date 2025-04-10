@@ -5,14 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>图片压缩工具</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* 现有样式 */
+        /* ... existing code ... */
+
+        /* 按钮组样式 */
+        .button-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .help-button {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4a90e2;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .help-button:hover {
+            background-color: #357abd;
+        }
+
+        .help-button i {
+            font-size: 16px;
+        }
+        /* ... existing code ... */
+    </style>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>图片压缩工具</h1>
             <p>简单快捷的在线图片压缩服务</p>
-            <div class="header-buttons">
-                <a href="help.html" class="nav-btn">使用帮助</a>
+            <div class="online-count">
+                当前在线: <span id="onlineCount">1</span> 人
             </div>
         </header>
 
@@ -119,6 +155,17 @@
                 <button id="compress300kBtn" class="compress-btn compress-300k" disabled>压缩至300KB</button>
                 <button id="downloadSelectedBtn" class="download-btn" disabled>下载选中图片</button>
                 <button id="downloadBtn" class="download-btn" disabled>下载压缩包</button>
+            </div>
+
+            <div class="button-group">
+                <button id="helpBtn" class="help-button" onclick="window.location.href='help.html'">
+                    <i class="fas fa-question-circle"></i>
+                    帮助
+                </button>
+                <button id="batchExportBtn" class="help-button" onclick="window.location.href='test.html'" style="margin-left: 10px;">
+                    <i class="fas fa-file-export"></i>
+                    批量导出
+                </button>
             </div>
         </main>
     </div>
